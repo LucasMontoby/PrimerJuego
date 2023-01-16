@@ -6,7 +6,7 @@ public class Canon : MonoBehaviour
 {
 
 
-    [SerializeField] private KeyCode shootKeyCode;
+    public KeyCode shootKeyCode;
 
 
 
@@ -14,7 +14,7 @@ public class Canon : MonoBehaviour
 
 
 
-    private void Update()
+     void Update()
     {
         if (Input.GetKeyDown(shootKeyCode))
         {
@@ -22,7 +22,7 @@ public class Canon : MonoBehaviour
         }
     }
 
-    private void Shoot()
+    void Shoot()
     {
         Debug.Log("Shoot");
     }
