@@ -11,7 +11,7 @@ public class script5 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -27,5 +27,21 @@ public class script5 : MonoBehaviour
             Instantiate(ball, pointOfShoot);
         }
     }
+
+    //function FixedUpdate()
+    //{
+    //    if (Input.GetButtonDown("Fire1"))
+    //    {
+    //        FireFunction();
+    //    }
+    //}
+
+    //function FireFunction()
+    //{
+    //    yield WaitForSeconds(5);
+
+    //    clone = Instantiate(projectile, transform.position, transform.rotation);
+    //    clone.velocity = transform.TransformDirection(Vector3(0, 0, speed));
+    //}
 }
 

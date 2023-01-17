@@ -9,12 +9,12 @@ public class script4 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-     
+        Instantiate(bullet, pointOfShoot);
     }
 
     // Update is called once per frame
     void Update()
     {
-        Instantiate(bullet, pointOfShoot);
+
     }
 }

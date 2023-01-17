@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8176163718893844467}
   - component: {fileID: 6238443006602134329}
   - component: {fileID: 5589981628549423853}
+  - component: {fileID: 8292715244898249863}
   m_Layer: 0
   m_Name: Canon
   m_TagString: Untagged
@@ -91,9 +92,23 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5589981628549423852}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d6bd39279d3b1e9439f5e582c70a0862, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   shootKeyCode: 32
+--- !u!114 &8292715244898249863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5589981628549423852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8df143f49c2bc9947bd87299c65add17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ball: {fileID: 6609556103245835047, guid: 61dcaad2cf1566e45be521eb9f9254c2, type: 3}
+  pointOfShoot: {fileID: 0}
