@@ -24,7 +24,7 @@ public class script5 : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Instantiate(ball, pointOfShoot);
+            Instantiate(ball, pointOfShoot); /*pointOfShoot.position, pointOfShoot.rotation*/
         }
     }
 
