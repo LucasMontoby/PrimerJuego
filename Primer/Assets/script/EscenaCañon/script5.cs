@@ -22,7 +22,7 @@ public class script5 : MonoBehaviour
 
     public void checImput()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space)) /*Dispara con tecla space*/
         {
             Instantiate(ball, pointOfShoot); /*pointOfShoot.position, pointOfShoot.rotation*/
         }
