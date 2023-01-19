@@ -41,6 +41,7 @@ public class CañonTemporizado : MonoBehaviour
     private void DissapearBull()
     {
         Debug.Log("the bull disappears");
+        Destroy(gameObject); 
     }
 
     public void ChecImput()
