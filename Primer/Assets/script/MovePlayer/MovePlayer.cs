@@ -5,7 +5,7 @@ using UnityEngine;
 public class MovePlayer : MonoBehaviour
 {
     [SerializeField] private float speed;
-    public float rotationSpeed = 90f;
+    [SerializeField] private float rotationSpeed;
     private void Update()
     {
         var horizontal = Input.GetAxisRaw("Horizontal");
