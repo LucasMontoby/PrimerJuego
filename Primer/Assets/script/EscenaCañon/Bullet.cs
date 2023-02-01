@@ -6,17 +6,23 @@ public class Bullet : MonoBehaviour
 
 {
     //public Vector3 direction;
-    public float speed;
+    
+    [SerializeField] private Transform pointOfShoot;
+    [SerializeField] private GameObject ball;
+    [SerializeField] private float damage;
+    [SerializeField] private float repeatRate = 0.3f;
+    [SerializeField] private float speed;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Update()
     {
-        
+        MoveBullet();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void MoveBullet()
     {
         transform.position += transform.forward * (speed * Time.deltaTime);
     }
 }
+
+
+
