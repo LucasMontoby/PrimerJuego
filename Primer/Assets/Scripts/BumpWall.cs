@@ -5,7 +5,8 @@ using Random = UnityEngine.Random;
 
 public class BumpWall : MonoBehaviour
 {
-    [SerializeField] private float impactTime = 2f;
+    [SerializeField] private float _impactTime = 2f;
+    [SerializeField] private Transform[] _newPositions;
     private float _currentTime;
 
 
@@ -13,7 +14,7 @@ public class BumpWall : MonoBehaviour
     {
         _currentTime += Time.deltaTime;
 
-        if (_currentTime >= impactTime &&
+        if (_currentTime >= _impactTime &&
         collision.gameObject.TryGetComponent<HarryController>(out var harryController))
         {
             _currentTime = 0;
@@ -22,13 +23,24 @@ public class BumpWall : MonoBehaviour
         }
     }
 
+    public Transform GetPosition()
+    {
+        return _newPositions[Random.Range(0, _newPositions.Length)];
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("Collision");
+    }
+
+    private void OnCollisionStay(Collision collision)
+    {
+        Debug.Log("Collision");
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        Debug.Log("Collision");
+    }
+
 }
-
-
-
-//[SerializeField] private Transform[] newPositions;
-
-//public Transform GetPosition()
-//    {
-//         return newPositions[Random.Range(0, newPositions.Length)];
-//    }
