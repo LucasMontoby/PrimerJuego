@@ -14,8 +14,7 @@ public class BumpWall : MonoBehaviour
     {
         _currentTime += Time.deltaTime;
 
-        if (_currentTime >= _impactTime &&
-        collision.gameObject.TryGetComponent<HarryController>(out var harryController))
+        if (_currentTime >= _impactTime && collision.gameObject.TryGetComponent<HarryController>(out var harryController))
         {
             _currentTime = 0;
 
@@ -29,11 +28,6 @@ public class BumpWall : MonoBehaviour
     }
 
     private void OnCollisionEnter(Collision collision)
-    {
-        Debug.Log("Collision");
-    }
-
-    private void OnCollisionStay(Collision collision)
     {
         Debug.Log("Collision");
     }
