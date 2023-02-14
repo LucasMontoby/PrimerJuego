@@ -49,7 +49,7 @@ public class Enemy : MonoBehaviour
         if (distance > persuitDistance)
         {
             transform.position = Vector3.MoveTowards(transform.position,
-               playerTransform.position, Time.deltaTime * speed);
+            playerTransform.position, Time.deltaTime * speed);
         }
     }
 }

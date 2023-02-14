@@ -22,6 +22,7 @@ public class BumpWall : MonoBehaviour
         }
     }
 
+
     public Transform GetPosition()
     {
         return _newPositions[Random.Range(0, _newPositions.Length)];
